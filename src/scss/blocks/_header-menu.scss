@@ -1,0 +1,42 @@
+.header-menu {
+  padding-top: 25px;
+  padding-bottom: 38px;
+  display: none;
+
+  &_active {
+    display: block;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $main-color;
+  }
+}
+
+.menu-collection {
+  display: none;
+
+  &__item {
+    line-height: 26px;
+  }
+
+  &__item_active a {
+    font-weight: 700;
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    max-height: 106px;
+    column-gap: 30px;
+  }
+
+  &_collections,
+  &_female,
+  &_male {
+    display: block;
+  }
+}

@@ -40,7 +40,7 @@
     }
 
     &__price {
-      margin-top: 5px;
+      margin-top: 12px;
       text-align: left;
       a {
         font-size: 19px;
@@ -60,19 +60,13 @@
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 769px) {
   .cards {
-    min-height: 677px;
-
-    &__title {
-      font-size: 25px;
-    }
-
     &__wrapper {
       margin-top: 23px;
       grid-template-columns: repeat(2, 160px);
       grid-template-rows: repeat(2, minmax(250px, auto));
-      column-gap: 10px;
+      column-gap: 25px;
       grid-auto-rows: minmax(415px, auto);
     }
 
@@ -82,6 +76,31 @@
         height: 215px;
       }
 
+      &__caption {
+        line-height: 16px;
+        a {
+          font-size: 18px;
+        }
+      }
+
+      &__price {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .cards {
+    min-height: 677px;
+
+    &__title {
+      font-size: 25px;
+    }
+
+    .card {
       &__caption {
         font-size: 15px;
       }

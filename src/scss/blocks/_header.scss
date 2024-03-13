@@ -8,6 +8,10 @@
   backdrop-filter: blur(7px);
   background: rgba(0, 0, 0, 0.05);
 
+  &_active {
+    min-height: 233px;
+  }
+
   &__wrapper {
     padding: 25px 0;
     display: flex;
@@ -22,6 +26,9 @@
     line-height: 23px;
     a {
       color: $main-color;
+      &:hover {
+        color: $hover-color;
+      }
     }
 
     &_active {
@@ -36,8 +43,8 @@
     height: 56px;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 7px;
+    transform: translateX(-50%);
     img {
       width: 100%;
     }
@@ -49,18 +56,25 @@
     text-transform: uppercase;
     a {
       color: $main-color;
+      &:hover {
+        color: $hover-color;
+      }
     }
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .header {
     backdrop-filter: none;
     background: rgba(0, 0, 0, 0);
     &__wrapper {
       display: none;
     }
+  }
+}
 
+@media (max-width: 376px) {
+  .header {
     &__logo {
       width: 65px;
       height: 35px;

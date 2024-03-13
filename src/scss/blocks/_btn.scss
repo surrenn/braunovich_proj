@@ -8,5 +8,6 @@
   line-height: 16px;
   &:hover {
     color: $second-color;
+    background-color: $hover-color;
   }
 }

@@ -14,13 +14,28 @@
     margin-left: 47px;
     font-size: 21px;
     color: $main-color;
+    &:hover {
+      color: $hover-color;
+    }
   }
   &__links {
     display: block;
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 769px) {
+  .promo {
+    &__link {
+      margin-left: 20px;
+    }
+
+    .btn {
+      padding: 12px 40px;
+    }
+  }
+}
+
+@media (max-width: 426px) {
   .promo {
     height: 100vh;
     padding-top: 600px;
