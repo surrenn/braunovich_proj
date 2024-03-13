@@ -1,0 +1,40 @@
+.promo {
+  min-height: 750px;
+  background: url("../img/promo/promo_bg.png") center center/cover no-repeat;
+  padding-bottom: 35px;
+  padding-top: 674px;
+
+  &__action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link {
+    margin-left: 47px;
+    font-size: 21px;
+    color: $main-color;
+  }
+  &__links {
+    display: block;
+  }
+}
+
+@media (max-width: 376px) {
+  .promo {
+    height: 100vh;
+    padding-top: 600px;
+    padding-bottom: 55px;
+    background: url("../img/promo/promo_mobile_bg.png") center center/ cover
+      no-repeat;
+
+    &__links {
+      display: none;
+    }
+
+    &__action {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

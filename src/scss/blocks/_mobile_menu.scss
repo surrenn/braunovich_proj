@@ -1,0 +1,32 @@
+.mobile-menu {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 60px;
+  background-color: $main-color;
+  padding: 10px 20px;
+
+  &__item {
+    display: flex;
+    height: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      font-size: 12px;
+      text-transform: uppercase;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  .mobile-menu {
+    display: flex;
+  }
+}

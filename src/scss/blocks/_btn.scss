@@ -1,0 +1,12 @@
+.btn {
+  display: inline-block;
+  padding: 12px 53px;
+  background-color: $main-color;
+  color: $second-color;
+  font-size: 17px;
+  text-align: center;
+  line-height: 16px;
+  &:hover {
+    color: $second-color;
+  }
+}

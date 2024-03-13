@@ -1,0 +1,36 @@
+@import "libs/bootstrap-reboot.min";
+@import "base/fonts";
+
+@import "base/variables";
+
+* {
+  font-family: "Buyan", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+}
+
+.container {
+  max-width: 1380px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/footer";
+@import "blocks/mobile_menu";
+@import "blocks/btn";
+@import "blocks/cards";
